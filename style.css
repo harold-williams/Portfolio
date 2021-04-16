@@ -1,0 +1,166 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0;}
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body {
+	background: #000000;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#demo-canvas {
+  	background: #000000;
+}
+
+section {
+	padding: 1em;
+	text-align: center;
+}
+
+nav {
+	width:100vw;
+	background:none;
+	position: absolute;
+	top: 40vh;
+	text-align:center;
+	color:#ffffff;
+	text-decoration: none;
+	font-weight: 100;
+}
+
+li {
+	display: inline;
+	margin: 10px 80px;
+}
+
+a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	color:#ffffff;
+	text-decoration: none;
+	font-weight: 100;
+	letter-spacing: -2px;
+}
+
+
+#project {
+    background-color: #ffffff;
+    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#182f52', endColorstr='#00040a');
+    background-image: url(//img.alicdn.com/tps/TB1d.u8MXXXXXXuXFXXXXXXXXXX-1900-790.jpg);
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #182f52), color-stop(100%, #00040a));
+    background-image: -webkit-linear-gradient(135deg, #182f52, #00040a);
+    background-image: -moz-linear-gradient(45deg, #182f52, #00040a);
+    background-image: -ms-linear-gradient(45deg, #182f52 0, #00040a 100%);
+    background-image: -o-linear-gradient(45deg, #182f52, #00040a);
+    background-image: linear-gradient(135deg, #182f52, #00040a);
+    text-align: center;
+    margin: 10% 0 0 0;
+    overflow-y: scroll;
+
+/*     background-color: #193c6d;
+    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#003073', endColorstr='#029797');
+    background-image: url(//img.alicdn.com/tps/TB1d.u8MXXXXXXuXFXXXXXXXXXX-1900-790.jpg);
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #003073), color-stop(100%, #029797));
+    background-image: -webkit-linear-gradient(135deg, #003073, #029797);
+    background-image: -moz-linear-gradient(45deg, #003073, #029797);
+    background-image: -ms-linear-gradient(45deg, #003073 0, #029797 100%);
+    background-image: -o-linear-gradient(45deg, #003073, #029797);
+    background-image: linear-gradient(135deg, #003073, #029797);
+    text-align: center;
+    margin: 10% 0 0 0;
+    overflow: hidden; */
+}
+
+#about {
+	width: 100vw;
+	height: 100vh;
+}
+
+#about canvas {
+	width: 100vw;
+	height: 100vh;
+}
+
+#project-header .column {
+	flex: 100%;
+	text-align: left;
+}
+
+#project-header h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-size: 42px;
+	color: #ffffff;
+}
+
+.row {
+	margin: 2% 16% 0;
+  	display: flex;
+}
+
+.column {
+  	flex: 50%;
+}
+
+.project {
+	margin: 20px 6%;
+	text-align: center;
+}
+
+.preview {
+	width: 100%;
+	margin-bottom: 30px;
+	will-change: transform;
+	transform: perspective(1400px) rotateX(0deg) rotateY(0deg);
+}
+
+.left {
+	margin-right: 2%;
+}
+
+.right {
+	margin-left: 2%;
+}
+
+.description {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-size: 12px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.skills {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	margin-top: 20px;
+	font-size: 9px;
+	color: #AAAAAA;
+	text-transform: uppercase;
+}
+
+#profile {
+    left: 25vw;
+    top: 6vh;
+    position:absolute;
+    width: 50vw;
+    text-align: center;
+}
+
+
+#profile-details {
+    background-color: #000000;
+    margin-top: -14vh;
+    width: 100%;
+    height: 100vh;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    width: 20vw;
+    border: solid 3px #000000;
+}

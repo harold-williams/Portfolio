@@ -27,7 +27,20 @@ export default class DetailView {
 
     onOpen() {
         const title = this.$els.el.querySelector('.detail-view__title')
-        const text = this.$els.el.querySelectorAll('p')
+
+        console.log(this.$els);
+
+        // const text = this.$els.el.querySelectorAll('p')
+
+        const ps = this.$els.el.querySelectorAll('p')
+
+        TM.to(ps, 0.1, {opacity:0, display:"none"});
+
+        const text = this.$els.el.getElementsByClassName(this.$els.title.innerText);
+
+        TM.to(text, 0.1, {opacity:100, display:"block"});
+
+        console.log(this.$els);
         const { title: pageTitle } = APP.Stage.$els
 
         this.stgs = new ST([title, text], { type: 'lines', linesClass: 'line' })
@@ -83,6 +96,10 @@ export default class DetailView {
             unwrap(this.stgs.lines)
         })
 
+        const ps = this.$els.el.querySelectorAll('p')
+
+        TM.to(ps, 1, {opacity:0, display:"none"});
+
         TM.to(this.$els.closeBtn, 0.5, {
             rotate: -45,
             scale: 0,
@@ -103,6 +120,9 @@ export default class DetailView {
         if (!shouldOpen) return
 
         this.$els.title.innerText = target.$els.title
+
+        console.log(target);
+
         this.onOpen()
     }
 

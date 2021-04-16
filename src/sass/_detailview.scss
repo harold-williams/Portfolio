@@ -46,6 +46,9 @@
 }
 
 .detail-view__content {
+
+    overflow-y: visible;
+
     p {
         width: 100%;
         max-width: 35vw;
